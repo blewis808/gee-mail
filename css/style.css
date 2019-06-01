@@ -1,0 +1,77 @@
+.mainmsg{
+    border-block-style: solid;
+padding-bottom: 100px;
+border-radius: 25px;
+
+
+
+}
+.topTabContainer {
+    position: absolute;
+    width: 100px;
+    background-color: rgba(250,250,250,0.35);
+    left:10;
+    float:left;
+
+}
+
+
+.topTabContainer {
+  height: 200px;
+  top: 0;
+  width: 200px;
+  height: 150px;
+  
+  
+
+}
+.topTab {
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 2px #ddd;
+  }
+  .inboxTab {background-color: #ddd;
+}
+.tabContainer{
+    height: 550px;
+    float: left;
+    width: 200px;
+  height: 150px; 
+}
+.tabContainer {
+    position: relative;
+    background-color: rgba(250,250,250,0.35);
+  }.topTab:hover{
+    cursor: pointer;
+    background-color: #084736;
+    border-radius: 25px;
+  }
+  .inboxTab {background-color:rgb(33, 104, 235);
+    
+}
+.outboxTab {background-color: rgb(33, 104, 235)
+}
+.draftsTab {background-color:rgb(33, 104, 235)
+}
+.deletedTab {background-color: rgb(33, 104, 235)
+}
+img{
+    width: 2%;
+    height: auto;
+
+}body {
+	margin: 0;
+}
+
+
+header {
+	background: rgb(209, 199, 199);
+	color: rgb(192, 11, 29);
+	padding: 2px;
+}
+
+#today{
+	color: rgb(12, 28, 31);
+
+}
+
+
