@@ -1,18 +1,108 @@
-<html>
-	<head>
-		<script src="js/mail-generator.js"></script>
-		<link href="css/style.css" rel="stylesheet" media="screen">
-    <script>
-      window.onload = function(){
-        // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
-        // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-        
-      };
-    </script>
-	</head>
-	<body>
-		<div class="container" id="main">
-			Build Me!
+
+	<html>
+		<head>
+			<title>DevLeague GeeMail Challenge</title>
+			<script src="js/mail-generator.js"></script>
+			<link href="css/style.css" rel="stylesheet" media="screen">
+			<script>
+
+
+				window.onload = function(){
+console.log(window.geemails)
+
+for( var i=0; i<window.geemails.length; i++){
+	var mainbox= document.createElement('div');
+	mainbox.className= 'mainmsg';
+	document.body.appendChild(mainbox);
+
+
+var bodybox=document.createElement('div');
+bodybox.className= 'bodymsg';
+bodybox.innerHTML=window.geemails[i].body
+bodybox.addEventListener.click
+mainbox.appendChild(bodybox)
+
+
+var datebox=document.createElement('div');
+datebox.className= 'datemsg';
+datebox.innerHTML=window.geemails[i].date
+mainbox.appendChild(datebox)
+
+
+var senderbox=document.createElement('div');
+senderbox.className= 'sendermsg';
+senderbox.innerHTML=window.geemails[i].sender
+mainbox.appendChild(senderbox)
+
+
+var subjectbox=document.createElement('div');
+subjectbox.className= 'subjectmsg';
+subjectbox.innerHTML=window.geemails[i].subject
+mainbox.appendChild(subjectbox)
+
+function allmsg(){
+var container=getNewMessage();
+
+var emptyBox=document.createElement('div');
+emptyBox.className='mainmsg';
+document.body.appendChild(emptyBox);
+
+var mainnew= document.createElement('div');
+emptyBox
+
+var elements = [""];
+elements.push(mainbox, bodybox,datebox,senderbox,subjectbox);
+
+
+
+
+
+}
+
+
+
+
+
+}
+};
+
+</script>
+		</head>
+		
+		<body>
+			
+			<header>
+				<h1>GeeMail</h1>
+				<h3>Powered By { }</h3>
+				<p id="today"></p>
+	
+			</header>
+	
+			<div id="menu">
+					
+			</div>
+				
+			<div id="main"> 
+						<p id="row1"></p>	  
+						<p id="row2"></p>
+	
+			</div> <div class="tabContainer"></div>
+			<div class="topTabContainer"></div>
+			<div class="topTab inboxTab">Inbox <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv6hxbWWllfbDDalHrkJXhLjUYKs77cxxP-OGnyTk3P8aFo5fYvw" alt=""></div>
+			<div class="topTab outboxTab">Outbox <img src="https://cdn2.iconfinder.com/data/icons/communication-glyphs-2/128/97-512.png" alt=""></div>
+			<div class="topTab draftsTab">Drafts</div>
+			<div class="topTab deletedTab">Deleted</div>
 		</div>
-	</body>
-</html>
+			<div class="bottomTabContainer">
+			
+			</div>
+			<div>
+					<table>
+						
+					</table> 
+			</div>    
+			
+		
+			
+			</body>
+	</html>
