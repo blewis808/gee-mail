@@ -14,6 +14,35 @@ for( var i=0; i<window.geemails.length; i++){
 	var mainbox= document.createElement('div');
 	mainbox.className= 'mainmsg';
 	document.body.appendChild(mainbox);
+window.geemails.push(newMessage
+)
+
+function addNewMessage(){
+	var newMessage = {
+		date: getNewMessage().date,
+		sender: getNewMessage().sender,
+		subject: getNewMessage().subject,
+		body: getNewMessage().body
+	};
+	window.geemails.push(newMessage);
+	
+	var messageHeader = document.createElement('div');
+	var messageDate = getNewMessage().date
+	messageHeader.className = 'messageHeaders';
+	messageHeader.innerHTML = getNewMessage().sender + ' ' + getNewMessage().subject + ' ' + messageDate;
+	main.appendChild(messageHeader);
+​
+	messageHeader.addEventListener('click', showHideBody);
+​
+	var messageBody = document.createElement('div');
+	messageBody.className = 'messageBodies';
+	messageBody.innerHTML = getNewMessage().body;
+	messageHeader.appendChild(messageBody);
+	counter.innerHTML = 'Messages: ' + window.geemails.length;
+}
+
+​
+setInterval(addNewMessage, 1000)
 
 
 var bodybox=document.createElement('div');
@@ -26,18 +55,21 @@ mainbox.appendChild(bodybox)
 var datebox=document.createElement('div');
 datebox.className= 'datemsg';
 datebox.innerHTML=window.geemails[i].date
+datebox.addEventListener.click
 mainbox.appendChild(datebox)
 
 
 var senderbox=document.createElement('div');
 senderbox.className= 'sendermsg';
 senderbox.innerHTML=window.geemails[i].sender
+senderbox.addEventListener.click
 mainbox.appendChild(senderbox)
 
 
 var subjectbox=document.createElement('div');
 subjectbox.className= 'subjectmsg';
 subjectbox.innerHTML=window.geemails[i].subject
+subjectbox.addEventListener.click
 mainbox.appendChild(subjectbox)
 
 function allmsg(){
@@ -66,6 +98,8 @@ elements.push(mainbox, bodybox,datebox,senderbox,subjectbox);
 }
 };
 
+      
+  
 </script>
 		</head>
 		
