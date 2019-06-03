@@ -31,10 +31,9 @@ function addNewMessage(){
 	messageHeader.className = 'messageHeaders';
 	messageHeader.innerHTML = getNewMessage().sender + ' ' + getNewMessage().subject + ' ' + messageDate;
 	main.appendChild(messageHeader);
-​
-	messageHeader.addEventListener('click', showHideBody);
-​
-	var messageBody = document.createElement('div');
+
+messageHeader.addEventListener('click', showHideBody);
+​var messageBody = document.createElement('div');
 	messageBody.className = 'messageBodies';
 	messageBody.innerHTML = getNewMessage().body;
 	messageHeader.appendChild(messageBody);
